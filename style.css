@@ -229,7 +229,7 @@ card:hover .card-info {
   pointer-events: none;
 }
 .card-info {
-  padding: 30px;
+  padding: 20px;
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -269,17 +269,17 @@ card:hover .card-info {
 }
 
 .crew-container {
-  padding: 40px 80px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 250px;
+  padding: 20px 60px;
   height: 100vh;
   width: 100vw;
   max-height: 600px;
-  max-width: 800px;
+  max-width: 900px;
+  min-height: 300px;
+  min-width: 200px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
 }
 .crew-border {
   text-align: center;
@@ -307,7 +307,6 @@ card:hover .card-info {
   box-shadow: 0 70px 63px -60px #000;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 .card0 {
