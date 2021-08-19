@@ -205,7 +205,6 @@ p + p {
   flex: 0 0 240px;
   width: 250px;
   height: 500px;
-  background-color: #333;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(225, 225, 225, 0.5) 0 0 0 6px;
