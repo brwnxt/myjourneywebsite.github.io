@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -158,10 +159,244 @@ body {
   font-size: 25px;
 }
 .plancontent hr {
+  margin-top: 10px;
+  margin-bottom: 50px;
   width: 30%;
   border: 1px solid #fff;
   text-align: center;
   display: inline-block;
+}
+/* CSS Untuk HORIZONTAL SCROLL DAN VERTICAL BAR */
+/* Scroll Bar CSS */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px #e5e3e3;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fdf9f6;
+}
+/* CSS HORIZONTAL SCROLL */
+horizontal-scroll {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 8px 50px 10px 0px;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  float: right;
+  scroll-behavior: smooth;
+}
+.dutajav-container2 {
+  position: relative;
+  width: 250px;
+  display: inline-block;
+}
+.dutajav-container2:hover .dutajav-image {
+  -webkit-filter: brightness(30%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.dutajav-container2:hover .dutajav-middle {
+  opacity: 1;
+}
+/* horizontal area responsive */
+.horizontal-container {
+  position: relative;
+  padding-bottom: 190px;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+.horizontal-container iframe,
+.horizontal-container object,
+.horizontal-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* CSS VERTICAL AREA */
+/* dutajav featured actress */
+.dutajav-container {
+  position: relative;
+  width: 250px;
+  margin: auto;
+}
+.dutajav-image {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 190px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  -webkit-filter: brightness(100%);
+}
+.dutajav-middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.dutajav-container:hover .dutajav-image {
+  -webkit-filter: brightness(30%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.dutajav-container:hover .dutajav-middle {
+  opacity: 1;
+}
+.dutajav-text-watermark {
+  width: 250px;
+  color: white;
+  opacity: 1;
+  font-size: 8px;
+  font-weight: normal;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  bottom: 7px;
+  right: 3px;
+  font-family: montserrat, sans-serif;
+  text-shadow: 2px 2px 5px black;
+}
+.dutajav-text {
+  width: 250px;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  bottom: 3px;
+  font-family: montserrat, sans-serif;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* AKHIR CSS HORIZONTAL SCROLL DAN VERTICAL AREA */
+horizontal-hightlight {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 11px 40px 17px 0px;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  float: right;
+  scroll-behavior: smooth;
+}
+.pembungkus-hightlight {
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  padding: 0 5px;
+}
+.pembungkus-hightlight:hover .dutajav-image {
+  -webkit-filter: brightness(30%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.pembungkus-hightlight:hover .highlight-middle {
+  opacity: 1;
+}
+/* horizontal area responsive */
+.hightlight-horizontal {
+  position: relative;
+  padding-bottom: 215px;
+  padding-top: 2px;
+  height: 0;
+  overflow: hidden;
+}
+.hightlight-horizontal iframe,
+.hightlight-horizontal object,
+.hightlight-horizontal embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dutajav-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  -webkit-filter: brightness(100%);
+}
+.highlight-middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.dutajav-text-watermark {
+  width: 250px;
+  color: white;
+  opacity: 1;
+  font-size: 8px;
+  font-weight: normal;
+  font-family: 'Indie+Flower';
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  bottom: 7px;
+  right: 3px;
+  text-shadow: 2px 2px 5px black;
+}
+.dutajav-text {
+  width: 250px;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Indie+Flower';
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  bottom: 3px;
+  text-shadow: 2px 2px 5px black;
+}
+.nomor-dan-kode {
+  color: white;
+  font-size: 8px;
+  font-weight: normal;
+  font-family: 'Indie+Flower';
+  text-shadow: 2px 2px 5px black;
+  padding: 2px 0px 0px 0px;
+  letter-spacing: 0.5em;
+}
+.imgbox-highlight {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(97, 95, 90, 0.5);
 }
 
 /*akhir plan*/
